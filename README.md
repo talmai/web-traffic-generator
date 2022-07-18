@@ -1,14 +1,14 @@
 # web-traffic-generator
 
-A quick and dirty HTTP/S "organic" traffic generator.
+A docker container of a quick and dirty HTTP/S "organic" traffic generator.
+
+### Available on Docker Hub
+
+`docker pull talmai/web-traffic-generator`
 
 ## About
 
-Just a simple (poorly written) Python script that aimlessly "browses" the internet by starting at pre-defined `ROOT_URLS` and randomly "clicking" links on pages until the pre-defined `MAX_DEPTH` is met.
-
-I created this as a noise generator to use for an Incident Response / Network Defense simulation. The only issue is that my simulation environment uses multiple IDS/IPS/NGFW devices that will not pass and log simple TCPreplays of canned traffic. I needed the traffic to be as organic as possible, essentially mimicking real users browsing the web.
-
-Tested on Ubuntu 14.04 & 16.04 minimal, but should work on any system with Python installed.
+Just a simple (poorly written) Python script that aimlessly "browses" the internet by starting at pre-defined `ROOT_URLS` and randomly "clicking" links on pages until the pre-defined `MAX_DEPTH` is met. Forked from [ReconInfoSec/web-traffic-generator](https://github.com/ReconInfoSec/web-traffic-generator). Pre-built with enough URLs in the config file to allow for simple deployment.
 
 [![asciicast](https://asciinema.org/a/304683.png)](https://asciinema.org/a/304683)
 

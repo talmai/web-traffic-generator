@@ -176,7 +176,6 @@ if __name__ == "__main__":
 
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
     print("Traffic generator started")
-    print("https://github.com/ecapuano/web-traffic-generator")
     print("Diving between 3 and {} links deep into {} root URLs,".format(
         config.MAX_DEPTH, len(config.ROOT_URLS)))
     print("Waiting between {} and {} seconds between requests. ".format(
